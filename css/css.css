@@ -20,12 +20,20 @@ body{
 
 .nav_lateral a{
     text-decoration: none;
-    color: white;
+    color: rgb(110, 120, 148);
     font-size: 20px;
     display: block;
     text-transform: uppercase;
-    padding: 10px 10px 10px 10px;
+    padding: 5px;
     margin: 20px;
+}
+
+.nav_lateral a:hover{
+    color: white;
+    border: solid;
+    border-width: 1px;
+    display: inline;
+    transition: color 0.3s linear;
 }
 
 .nav_lateral h1{
@@ -39,12 +47,6 @@ body{
     font-weight: lighter;
 }
 
-.nav_lateral a:hover{
-    border: solid;
-    border-width: 1px;
-    display: inline-block;
-}
-
 .estrutura_inicio{
     height: 90vh;
     width: 136vh;
@@ -55,17 +57,27 @@ body{
 .estrutura_inicio p{
     font-size: 35px;
     text-align: center;
-    padding: 2% 10% 0% 10%;
+    padding: 2% 10% 0% 15%;
 }
 
-.estrutura_inicio button{
+#vetor{
+    width: 100px 10px 10px 10px;
+}
+
+#comece_simular{
     font-size: 35px;
     border-radius: 10px;
+    border: none;
     margin: 2%;
     padding: 10px 40px 10px 40px;
     background-color: rgb(24, 29, 43);
     color: white;
 }
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  } 
 
 main{
     margin-left: 25%;
