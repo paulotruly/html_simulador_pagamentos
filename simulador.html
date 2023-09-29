@@ -7,7 +7,7 @@
         <meta name="description" content=" ">
         <meta name="keywords" content=" ">
         <link rel="stylesheet" href="css/css.css">
-        <title> Simulador </title>
+        <title> Cartões </title>
     </head>
 
 <body>
@@ -15,23 +15,33 @@
     <div class="nav_lateral">
         <h1> <strong>Simulador</strong>DePagamentos </h1>
         <a href="index.html"> Início </a>
-        <a href="cartoes.html"> Cartões </a>
+        <a href="cartoes.html"> Adicionar cartões </a>
         <a href="simulador.html"> Simulador </a>
     </div>
 
     
     <main>
-        <div class="estrutura_inicio">
-            <center>
-            <img id="vetor" src="imagens/image 1.png" alt="Vetor de pagamentos"> 
-            <p>
-                O site proporciona aos consumidores uma experiência prática e educativa,
-                permitindo que <strong>pagamentos com cartões de débito e crédito</strong> de maneira
-                realista e segura, para melhor compreensão do processo.
-                <br><br>
-                <button id="comece_simular"> Comece a simular </button>
-            </p>
-            </center>
+        <div class="estrutura_cartoes">
+            <center> 
+            <img id="card_vector" src="imagens/image 2.png" alt="Vetor de cartão"> 
+            <h1> Simulando pagamentos </h1>
+
+            <h3> Selecione o cartão </h3>
+            <select onChange>
+                <option value="idDoCartao"></option>
+            </select>
+
+            <h3> Selecione o tipo da operação </h3>
+            <select>
+                <option value="credit">Crédito</option>
+                <option value="debit">Débito</option>
+            </select>
+
+            <h3>Defina o valor</h3>
+            <input type="number" placeholder="R$"> </input> 
+            <br>
+            <button id="comece_simular"> Realizar pagamento </button>
+            </center>    
         </div>
         
     </main>
